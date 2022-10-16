@@ -1,74 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Jönköping simsällskap</h1>
-    <img src="si.jpg" alt="bild" width="500" height="200">
-    <img src="s3.png" alt="bild" width="500" height="200">
-    <img src="s2.jpg" alt="bild" width="500" height="200">
-    <h2> Om föreningen och regler </h2>
-    <div>
-        <p>"Å andra sidan fördömer vi med rättfärdig indignation och ogillar män som är så förledda 
-            och demoraliserade av stundens njutning, så förblindade av begär, att de inte kan förutse 
-            smärtan och besvären som är skyldiga att följa; och lika skulden tillhör dem som misslyckas
-             med sin plikt genom viljesvaghet, vilket är detsamma som att säga genom att krympa från möda 
-             och smärta. Dessa fall är helt enkla och lätta att urskilja. I en ledig timme, när vår 
-             valmöjlighet är obehindrad och när ingenting hindrar oss från att kunna göra det vi tycker bäst om,
-              är varje nöje att välkomnas och varje smärta undvikas. Men under vissa omständigheter och på grund 
-              av pliktens krav eller affärernas skyldigheter kommer det ofta att inträffa att nöjen måste förkastas 
-              och irritationsmoment accepteras.Den vise mannen håller därför alltid i dessa frågor fast vid denna 
-              urvalsprincip: han avvisar nöjen för att säkra andra större nöjen, eller så uthärdar han smärtor för
-               att undvika värre smärtor."</p>
-    </div>
-    
-     
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
+  <div id="demo">
+  <h1>Jönköping simsällskap</h1>
   
-  <form class="modal-content animate" >
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit" value = "test" onclick= "return myFunction()">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      
-    </div>
-  </form>
+  <h2> Om föreningen och regler </h2>
+  
+    <p>"Å andra sidan fördömer vi med rättfärdig indignation och ogillar män som är så förledda <br>
+      och demoraliserade av stundens njutning, så förblindade av begär, att de inte kan förutse <br>
+      smärtan och besvären som är skyldiga att följa; och lika skulden tillhör dem som misslyckas <br>
+      med sin plikt genom viljesvaghet, vilket är detsamma som att säga genom att krympa från möda <br>
+      och smärta. Dessa fall är helt enkla och lätta att urskilja. I en ledig timme, när vår <br>
+      valmöjlighet är obehindrad och när ingenting hindrar oss från att kunna göra det vi tycker bäst om,<br>
+      är varje nöje att välkomnas och varje smärta undvikas. Men under vissa omständigheter och på grund <br>
+      av pliktens krav eller affärernas skyldigheter kommer det ofta att inträffa att nöjen måste förkastas <br>
+      och irritationsmoment accepteras.Den vise mannen håller därför alltid i dessa frågor fast vid denna <br>
+      urvalsprincip: han avvisar nöjen för att säkra andra större nöjen, eller så uthärdar han smärtor för <br>
+      att undvika värre smärtor."</p>
+  
 
 
-     </div>
-     
-     
-     
+  <h1> Login </h1>
+  <label for="name"><b>Username</b></label>
+    <input type="text" id="username"  ><br><br>
 
+    <label for="psw"><b>Password</b></label>
+    <input type="text" id="password"  ><br><br>
+
+    <button id="login">Login </button>
+  
+ 
+      </div>
+
+  
     
-     
-     <p id="p01>"></p>
-     <script src="script.js"></script>
-     
-
+    <div id="logut">
     
+      
+  <button >Logut</button>
+  </div>
+      <script src="script.js"></script>
+
+
+  
+  
+
+
+
+
+
+
+ 
+
+
+
 </body>
+
 </html>

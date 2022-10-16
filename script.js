@@ -1,36 +1,35 @@
-var modal = document.getElementById('id01');
+const name = document.getElementById("username");
+const psw = document.getElementById("password");
+const login = document.getElementById("login");
+const logut = document.getElementById("logut");
+login.addEventListener("click", function () {
 
+  if (username.value == "Sara" && password.value == "qwe123") {
 
-
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-function myFunction() {
-  
-   
-  let uname = document.getElementsByName("uname")[0].value;
-  let psw = document.getElementsByName("psw")[0].value;
-  try { 
-    if(uname == "sara" && psw =="qwe123")
-    {  alert( "välkommen, du är nu inloggad");}
-    
-    else{
-      alert("försök igen");
-    }
-    
-    
+      localStorage.setItem("usernamn", "Sara");
+      localStorage.setItem("password", "qwe123");
+      document.getElementById("demo").style.display = "none";
+      
+  alert("vällkomen du har inloggat")
+      document.getElementById("logut").style.display = "block";
+      
   }
-  catch(err) {
-    message.innerHTML = "Input is " + err;
-  }
-}
-localStorage .setItem("uname","sara");
-innerHTML = localStorage.getItem("uname");
-localStorage .setItem("psw","qwe123");
-innerHTML = localStorage.getItem("uname");
+  else {
+
+      alert("Fel password försök igen.");
+  }});
+
+  logut.addEventListener("click", function () {
+
+
+
+    localStorage.removeItem("usernamn", "Sara");
+    localStorage.removeItem("password", "qwe123");
+    document.getElementById("demo").style.display = "block";
+
+    document.getElementById("logut").style.display = "none";
+} 
+
+
+);
 
